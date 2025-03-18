@@ -1,1 +1,13 @@
-# RealWorldProblems
+# Real World Algorithms
+
+This repository contains exercises practising the Algorithmic thinking. Core objective of them is to actualy implement algorithms in Real World problems.
+Those Assignments were completed during the Algorithms and Data Structures Course of the Department of Management Science and Technology at the Athens University of Economics and Business with Professor [Panos Louridas](https://github.com/louridas). Theoretical knowledge on the topics and algorithms was provided by the book ["Real World Algorithms - A Beginners Guide" by Panos Louridas](https://mitpress.mit.edu/books/real-world-algorithms).
+
+## Assignment 1: Tromino Tiling
+This Python script implements Tromino Tiling, a recursive algorithm used to tile a $2^n \times 2^n$ board with L-shaped trominoes, given that one square is pre-marked as occupied. The program initializes the board and strategically places the missing tile ("G"). It then recursively divides the board into four quadrants, ensuring that each section is properly aligned and tiled using trominoes. The rotate() function is used to adjust orientations, while fill_2_2() systematically places trominoes with alternating colors ("B" and "R"). Finally, the fully tiled board is printed, demonstrating an efficient recursive approach to solving the problem.
+
+## Assignment 2: Bursts Detection
+This Python script detects bursts of activity in temporal event sequences using two different algorithms: Viterbi and Trellis. It reads an input file containing event timestamps, computes inter-arrival times, and applies a probabilistic model to segment the data into bursts. The Viterbi algorithm employs dynamic programming to minimize a cost function, while the Trellis-based method uses a graph-based approach to evaluate optimal transitions. Users can specify parameters like scaling factor (-s), gamma (-g), and debug mode (-d) via command-line arguments. The script outputs detected bursts as time intervals, making it useful for analyzing event-based datasets such as social media activity, call patterns, or biological signals.
+
+## Assignment 2: Influence Maximization
+This Python script implements influence maximization, a technique used to identify the most influential nodes in a network to maximize information spread. It processes an input graph and applies one of two selection strategies: Max-Degree, which picks the top k nodes with the highest connections, or Greedy, which iteratively selects nodes that yield the greatest expected influence using Monte Carlo simulations. Influence propagation is simulated using a Breadth-First Search (BFS) model, where each node has a probability of activating its neighbors. The script outputs the most influential seed nodes and their influence scores, making it applicable to viral marketing, social network analysis, and information diffusion studies.
